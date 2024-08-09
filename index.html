@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    
+    <div class="one">
+        <h1>KNOW ABOUT YOUR SELF</h1>
+        <ul id="three">
+            <li><a href="">LOGIN</a></li>
+            <li><a href="">ABOUT</a></li>
+        </ul>
+        <ul id="four">
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">GAMES</a></li>
+        </ul>
+    </div>
+     <div class="list">
+        <h2>TODO LIST</h2>
+        <P>Krack your goals ! Plan your day routine!! Keep updating yourself!!!
+        </P>
+        <button onclick="openTodo()">CLICK HERE</button>
+    </div>
+    <div class="overlay" onclick="closeTodo()"></div>
+    <div class="todolist">
+       <input id="five">
+       <button onclick="add()">ADD</button>
+       <ul id="six">
+         <li>Freshup
+            <button onclick="deleteitem(event)">DELETE</button>
+         </li>
+       </ul>
+       <button onclick="closeTodo()">CLOSE</button>
+    </div>
+     <script>
+        /*var a=document.getElementById("five")
+        var b=document.getElementById("six")
+        function add(){
+          var c=document.createElement("li")
+          c.innerHTML=a.value + "<button onclick='deleteitem(event)'>DELETE</button>"
+          b.append(c)
+        }
+        function deleteitem(event){
+            event.target.parentElement.remove()
+        }
+        var d=document.querySelector(".overlay")
+        var e=document.querySelector(".todolist")
+        function click(){
+          d.style.display="block"
+          e.style.display="block"
+
+        }
+        function close(){
+          d.style.display="none"
+          e.style.display="none"
+        }*/
+     function add() {
+        var a = document.getElementById("five");
+        var b = document.getElementById("six");
+        var c = document.createElement("li");
+        c.innerHTML = a.value + " <button onclick='deleteitem(event)'>DELETE</button>";
+        b.appendChild(c);
+        a.value = ""; // Clear the input field after adding
+    }
+  
+    function deleteitem(event) {
+        event.target.parentElement.remove();
+    }
+
+    function openTodo() {
+       document.querySelector(".overlay").style.display = "block";
+       document.querySelector(".todolist").style.display = "block";
+    }
+
+    function closeTodo() {
+       document.querySelector(".overlay").style.display = "none";
+       document.querySelector(".todolist").style.display = "none";
+    }
+
+    </script>
+    
+</body>
+</html>
