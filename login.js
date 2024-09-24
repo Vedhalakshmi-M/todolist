@@ -73,6 +73,27 @@ function setSuccess(element){
     inputGroup.classList.add('success')
     inputGroup.classList.remove('error')
 }
+function generatePassword() {
+    var randomChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*";
+    var passwordLength = 12; // You can adjust the length
+    var password = "";
+
+    for (var i = 0; i < passwordLength; i++) {
+        var randomIndex = Math.floor(Math.random() * randomChars.length);
+        password += randomChars[randomIndex];
+    }
+
+    return password;
+}
+
+document.querySelector('.random a').addEventListener('click', function(e) {
+    e.preventDefault();
+    var newPassword = generatePassword();
+    alert("Generated Password: " + newPassword);
+    document.querySelector('#password').value = newPassword;
+    document.querySelector('#cpassword').value = newPassword;
+});
+
     
 
     

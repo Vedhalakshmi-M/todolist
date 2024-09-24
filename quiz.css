@@ -1,0 +1,114 @@
+body{
+    background: linear-gradient(to right,red,white);
+    font-family:'Courier New', Courier, monospace;
+
+}
+.one{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 20px 0px;
+    border-left: 1px;
+    border-right: 1px;
+    margin: 8px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.one h1{
+    
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+   
+}
+.two{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.two h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+#options{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#quiz-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#quiz-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#quiz-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#quiz-container button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: blue;
+}
+
+#next-question {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.two button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.two button:hover {
+    background-color: #45a049;
+}
